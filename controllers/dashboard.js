@@ -9,12 +9,6 @@ const getHomepage = async (req, res) => {
         var userData = await getStats(req, res);
 
         var leaderboardData = await getLeaderboard(req, res)
-        console.log(leaderboardData)
-        // res.render('home',{
-        //     title:"Dashboard",
-        //     active:"Home",
-
-        // })
         res.render("main/dashboard", {
             title: "Dashboard",
 
